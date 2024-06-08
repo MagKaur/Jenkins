@@ -1,13 +1,1 @@
-Pracownik może wyświetlić listę dodanych aplikacji wraz z listą wersji 
-	oprogramowania.
-19. Pracownik może wyświetlić listę dodanych modeli urządzeń wraz z listą wersji 
-	oprogramowania.
-20. Pracownik może wyświetlić listę dodanych test case.
-21. Pracownik może wyświetlić szczegóły modelu urządzenia.
-22. Pracownik może wyświetlić szczegóły aplikacji.
-23. Pracownik może wyświetlić szczegóły wybranego test case.
-24. Pracownik może wyświetlić listę test task przypisanych do danego 
-	użytkownika.
-29. Pracownik może wyświetlić listy test case dla wybranego test task.
-30. Pracownik może wyszukać listę test case przypisaną do wybranego test task po 
-	statusie test case.
+..
