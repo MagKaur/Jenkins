@@ -1,1 +1,27 @@
-..
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+# Konfiguracja przeglądarki
+service = Service(ChromeDriverManager().install())
+options = webdriver.ChromeOptions()
+options.add_argument("--start-maximized")  # Otwórz przeglądarkę w trybie pełnoekranowym
+
+# Uruchom przeglądarkę
+driver = webdriver.Chrome(service=service, options=options)
+
+# Otwórz stronę
+url = "https://selenium.com/lander"
+driver.get(url)
+
+# Jeśli chcesz wykonać jakieś działania na stronie, np. kliknąć przycisk, znajdź elementy
+# przykładowo: przycisk = driver.find_element(By.ID, 'przycisk_id')
+# przycisk.click()
+
+# Poczekaj kilka sekund, aby zobaczyć stronę (opcjonalne)
+import time
+time.sleep(5)
+
+# Zamknij przeglądarkę
+driver.quit()
